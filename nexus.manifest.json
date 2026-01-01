@@ -1,0 +1,116 @@
+{
+  "name": "nexus-publisher",
+  "displayName": "PublisherAI - Book Publishing & Distribution Platform",
+  "version": "1.0.0",
+  "description": "Complete AI-powered publishing platform. ISBN management, multi-format conversion, global distribution (Amazon, IngramSpark, Kobo), metadata optimization, and royalty tracking.",
+  "developer": {
+    "name": "Adverant",
+    "url": "https://adverant.ai",
+    "email": "plugins@adverant.ai",
+    "verified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adverant/Adverant-Nexus-Plugin-Publisher"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "publishing",
+    "book-distribution",
+    "isbn",
+    "amazon-kdp",
+    "ingram",
+    "ebook",
+    "print-on-demand"
+  ],
+  "nexus": {
+    "minVersion": "1.0.0",
+    "executionMode": "mcp_container",
+    "isolationLevel": 2,
+    "capabilities": [
+      "isbn-management",
+      "format-conversion",
+      "multi-platform-distribution",
+      "metadata-optimization",
+      "royalty-tracking",
+      "sales-analytics"
+    ],
+    "permissions": [
+      "network:external",
+      "filesystem:temp",
+      "service:mageagent",
+      "service:fileprocess"
+    ],
+    "entrypoint": "dist/index.js",
+    "healthCheck": "/health",
+    "readinessCheck": "/ready",
+    "livenessCheck": "/live"
+  },
+  "resources": {
+    "cpuMillicores": 1000,
+    "memoryMB": 2048,
+    "diskGB": 50,
+    "timeoutMs": 600000,
+    "maxConcurrentJobs": 10
+  },
+  "api": {
+    "version": "v1",
+    "basePath": "/api/v1/publisher",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/books",
+        "description": "Create book project"
+      },
+      {
+        "method": "POST",
+        "path": "/books/:id/convert",
+        "description": "Convert to formats"
+      },
+      {
+        "method": "POST",
+        "path": "/books/:id/distribute",
+        "description": "Distribute to platforms"
+      },
+      {
+        "method": "GET",
+        "path": "/royalties",
+        "description": "Get royalty report"
+      }
+    ]
+  },
+  "pricing": {
+    "model": "hybrid",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "indie",
+        "displayName": "Indie Author",
+        "priceMonthly": 1900,
+        "limits": { "booksPerYear": 5, "platforms": 3 },
+        "features": ["basic-conversion", "amazon-kdp", "metadata"]
+      },
+      {
+        "name": "author",
+        "displayName": "Professional Author",
+        "priceMonthly": 4900,
+        "limits": { "booksPerYear": 20, "platforms": 10 },
+        "features": ["all-formats", "ingram", "isbn-management", "royalty-tracking"],
+        "popular": true
+      },
+      {
+        "name": "publisher",
+        "displayName": "Publisher",
+        "priceMonthly": 19900,
+        "limits": { "booksPerYear": -1, "platforms": -1 },
+        "features": ["unlimited", "bulk-distribution", "white-label", "api-access"]
+      }
+    ]
+  },
+  "marketplace": {
+    "category": "publishing",
+    "subcategory": "distribution",
+    "featured": true,
+    "tags": ["publishing", "distribution", "isbn", "amazon", "ebook", "print-on-demand"]
+  }
+}

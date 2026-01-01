@@ -119,15 +119,15 @@ async function publishIndieNovel(manuscriptPath: string) {
 }
 ```
 
-### Results
+### Benefits
 
-| Metric | Traditional Publishing | PublisherAI | Improvement |
-|--------|----------------------|-------------|-------------|
-| Time to Market | 18-24 months | 2-3 weeks | 98% faster |
-| Royalty Rate | 10-15% | 35-70% | 3-5x higher |
-| Upfront Cost | $0 (but no control) | $250-500 | Full control |
-| Distribution Reach | Publisher-dependent | Global, 40,000+ retailers | Expanded reach |
-| Rights Retained | Often surrendered | 100% author-owned | Full ownership |
+| Aspect | Traditional Publishing | PublisherAI |
+|--------|----------------------|-------------|
+| Time to Market | Months to years | Weeks |
+| Royalty Rate | Publisher-set | Self-publishing rates |
+| Creative Control | Publisher-dependent | Full author control |
+| Distribution | Publisher-managed | Global distribution available |
+| Rights | Often contracted away | Author-retained |
 
 ---
 
@@ -375,15 +375,13 @@ async def main():
 asyncio.run(main())
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Time per Title | 3 weeks | 2 days | 90% reduction |
-| Staff Required | 3 FTEs | 1 FTE | 67% reduction |
-| ISBN Management Time | 2 hours/title | Automated | 100% reduction |
-| Platform Submission | 4 hours/title | 15 minutes | 94% reduction |
-| Royalty Reconciliation | 2 days/month | Real-time | Instant |
+- **Faster time per title** through automated workflows
+- **Reduced staffing needs** for publishing operations
+- **Automated ISBN management** eliminates manual tracking
+- **Streamlined platform submission** to multiple retailers
+- **Real-time royalty reconciliation** across platforms
 
 ---
 
@@ -564,15 +562,13 @@ function calculateAcademicPrintPrice(pageCount: number): number {
 }
 ```
 
-### Results
+### Benefits
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| LCCN Processing | 4-6 weeks | 1-2 weeks | 70% faster |
-| Accessibility Compliance | Manual audit (40 hrs) | Automated (2 hrs) | 95% reduction |
-| Format Production | 2 weeks | 3 days | 79% faster |
-| Bookstore Integration | Manual data entry | Automated ONIX | 100% automated |
-| Annual Production Capacity | 20 titles | 80 titles | 4x increase |
+- **Faster LCCN processing** with pre-validated submissions
+- **Automated accessibility compliance** checking (WCAG 2.1)
+- **Streamlined format production** across print, ebook, and accessible versions
+- **Automated bookstore integration** via ONIX feeds
+- **Increased production capacity** through workflow automation
 
 ---
 
@@ -817,13 +813,13 @@ async function publishRomanceSeries() {
 
 ### Results
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Cover Consistency | Variable | 100% consistent | Brand cohesion |
-| Series Linking | Manual per platform | Automated | 100% automated |
-| Release Coordination | 8 hours/book | 30 minutes | 94% reduction |
-| Read-Through Rate | 45% | 68% | +23 points |
-| Series Revenue | $12K/month | $31K/month | 158% increase |
+### Benefits
+
+- **Consistent cover design** across all series titles
+- **Automated series linking** on all platforms
+- **Streamlined release coordination** for new titles
+- **Improved read-through rates** with proper series presentation
+- **Revenue growth** through better series discoverability
 
 ---
 
@@ -1037,13 +1033,13 @@ def estimate_audiobook_revenue(duration_hours: float) -> dict:
 
 ### Results
 
-| Metric | Traditional Production | AI Narration | Improvement |
-|--------|----------------------|--------------|-------------|
-| Production Cost | $2,000-5,000 | $50-150 | 95% savings |
-| Production Time | 4-8 weeks | 2-3 days | 90% faster |
-| Quality Score | 4.5/5 (professional) | 4.2/5 (AI) | Comparable |
-| Distribution Reach | Audible-only (often) | 400+ retailers | 10x reach |
-| Break-Even Units | 200-500 | 10-30 | 95% lower |
+### Benefits
+
+- **Lower production costs** compared to traditional studio recording
+- **Faster turnaround** through AI-powered narration
+- **Quality narration** with voice customization options
+- **Broader distribution** across multiple audiobook platforms
+- **Lower break-even point** enabling more titles to be profitable
 
 ---
 
